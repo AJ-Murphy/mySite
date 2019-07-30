@@ -7,22 +7,14 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import { useSpring, animated } from "react-spring"
 
-import "./layout.scss"
+import "../styles/global.scss"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+  const fade = useSpring({ opacity: 1, from: { opacity: 0 } })
 
-  return <>{children}</>
+  return <animated.div style={fade}>{children}</animated.div>
 }
 
 Layout.propTypes = {
