@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import Nav from "../components/nav"
 import NavLinks from "../components/navLinks"
 import Hero from "../components/hero"
-import Content from "../components/content"
+import Content from "../components/section"
 
 import SEO from "../components/seo"
 
