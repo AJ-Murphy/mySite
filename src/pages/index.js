@@ -15,7 +15,7 @@ const IndexPage = () => (
       headingText="Adam J Murphy"
       subHeadingText="Full-stack web developer"
       buttonText="Contact"
-      buttonLink="#"
+      buttonLink="#contact"
     />
   </Layout>
 )
