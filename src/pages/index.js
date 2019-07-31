@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import Nav from "../components/nav"
 import NavLinks from "../components/navLinks"
 import Hero from "../components/hero"
+import Content from "../components/content"
 
 import SEO from "../components/seo"
 
@@ -22,6 +23,10 @@ const IndexPage = () => (
       subHeadingText="Full-stack web developer"
       buttonText="Contact"
       buttonLink="#contact"
+    />
+    <Content
+      headingText="About"
+      paragraphText="Web developer with 2 years experiance"
     />
   </Layout>
 )
