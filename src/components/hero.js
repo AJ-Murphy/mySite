@@ -8,7 +8,7 @@ import "../styles/hero.scss"
 const Hero = ({ headingText, subHeadingText, buttonText, buttonLink }) => (
   <div
     id="hero"
-    className="container max-w-full h-screen flex flex-col justify-center items-center text-white text-center"
+    className="container h-screen flex flex-col justify-center items-center text-white text-center"
   >
     <h1 className="m-4 text-3xl sm:text-6xl">{headingText}</h1>
     <p className="m4 text-lg sm:text-2xl">{subHeadingText}</p>

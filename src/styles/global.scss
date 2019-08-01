@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#hero,
+#hero ~ section > .container {
+  min-width: calc(100% - 2.5rem);
+  position: relative;
+  left: 2.5rem;
+  @apply px-10;
+}
