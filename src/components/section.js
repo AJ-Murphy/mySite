@@ -7,7 +7,7 @@ const Section = ({ children, id, headingText, paragraphText }) => (
       id={id}
       className="container flex flex-col justify-content items-center py-24"
     >
-      <h2 className="mb-8">{headingText}</h2>
+      <h2 className="mb-12">{headingText}</h2>
       <p className="sm:text-center">{paragraphText}</p>
       {children}
     </div>
