@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.text-initial {
+  color: initial;
+}
+
 #hero,
 #hero ~ section > .container {
   min-width: calc(100% - 2.5rem);
