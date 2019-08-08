@@ -9,6 +9,7 @@ import Hero from "../components/hero"
 import Section from "../components/section"
 import Cards from "../components/cards"
 import Card from "../components/card"
+import Contact from "../components/contactForm"
 
 import SEO from "../components/seo"
 
@@ -39,6 +40,9 @@ const IndexPage = () => (
           image="https://via.placeholder.com/450x250"
         />
       </Cards>
+    </Section>
+    <Section headingText="Contact">
+      <Contact />
     </Section>
   </Layout>
 )
