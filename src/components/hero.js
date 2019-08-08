@@ -1,25 +1,36 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import { Mail } from "react-feather"
+import * as Icon from "react-feather"
 
 import "../styles/hero.scss"
 
-const Hero = ({ headingText, subHeadingText, buttonText, buttonLink }) => (
+const Hero = ({
+  headingText,
+  subHeadingText,
+  linkedin,
+  github,
+  chevronLink,
+}) => (
   <div
     id="hero"
-    className="container h-screen flex flex-col justify-center items-center text-white text-center"
+    className="container h-screen flex flex-col justify-center items-center text-white text-center m-0"
   >
-    <h1 className="m-4 text-3xl sm:text-6xl">{headingText}</h1>
-    <p className="m4 text-lg sm:text-2xl">{subHeadingText}</p>
-    <a href={buttonLink}>
-      <button
-        type="button"
-        className="font-bold text-white text-xs bg-blue m-4 py-2 px-4 inline-flex items-center sm:text-base  hover:bg-darkBlue"
-      >
-        <Mail />
-        <span className="ml-1">{buttonText}</span>
-      </button>
+    <h1 className="mt-auto mb-4 text-3xl sm:text-6xl">{headingText}</h1>
+    <p className="m-4 text-lg sm:text-2xl">{subHeadingText}</p>
+    <div className="text-white text-xs inline-flex text-center">
+      <a href={linkedin} className="m-2 cursor-pointer">
+        <Icon.Linkedin />
+      </a>
+      <a href={github} className="m-2 cursor-pointer">
+        <Icon.GitHub />
+      </a>
+    </div>
+
+    <a href={chevronLink} className="mt-auto">
+      <div className="text-white text-xs m-4 mt-auto">
+        <Icon.ChevronDown />
+      </div>
     </a>
   </div>
 )
