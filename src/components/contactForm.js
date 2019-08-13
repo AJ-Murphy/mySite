@@ -56,13 +56,13 @@ const Contact = () => {
           />
           <div className="flex items-center justify-between">
             <button
-              className="bg-transparent font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              className="bg-transparent hover:bg-lightBlue text-black font-semibold hover:text-white py-2 px-4 border-2 border-black hover:border-lightBlue rounded cursor-pointer"
               type="button"
             >
               Send
             </button>
             <input
-              className="bg-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              className="bg-transparent hover:bg-lightBlue text-black font-semibold hover:text-white py-2 px-4 border-2 border-black hover:border-lightBlue rounded cursor-pointer"
               type="reset"
               value="Clear"
             />
