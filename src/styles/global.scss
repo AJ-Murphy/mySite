@@ -53,6 +53,10 @@ object {
   color: initial;
 }
 
+body {
+  @apply bg-white;
+}
+
 #hero,
 #hero ~ section > .container {
   min-width: calc(100% - 2.5rem);
