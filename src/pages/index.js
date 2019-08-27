@@ -14,19 +14,19 @@ import Contact from "../components/contactForm"
 import SEO from "../components/seo"
 
 const IndexPage = () => {
-  // const battleship = useStaticQuery(graphql`
-  //   query {
-  //     file(relativePath: { eq: "battleship.jpg" }) {
-  //       childImageSharp {
-  //         # Specify a fixed image and fragment.
-  //         # The default width is 400 pixels
-  //         fixed(width: 400, height: 300) {
-  //           ...GatsbyImageSharpFixed
-  //         }
-  //       }
-  //     }
-  //   }
-  // `)
+  const battleship = useStaticQuery(graphql`
+    query {
+      file(relativePath: { eq: "battleships.png" }) {
+        childImageSharp {
+          # Specify a fixed image and fragment.
+          # The default width is 400 pixels
+          fixed(width: 400, height: 300) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+    }
+  `)
 
   return (
     <Layout>
@@ -45,15 +45,15 @@ const IndexPage = () => {
       />
       <Section
         headingText="About"
-        paragraphText="Web developer with 2 years experiance"
+        paragraphText="Hi, I am a full-stack web developer with 2+ years in the industry! interest in staying up-to-date on the latest trends"
       />
       <Section headingText="Portfolio">
         <Cards>
           <Card
             headingText="Battleships"
-            paragraphText="Small game of Battleships made with CSS Grid and JavaScript!"
-            // image={battleship.file.childImageSharp.fixed}
-            image="https://via.placeholder.com/400"
+            paragraphText="A basic game of Battleships made with JavaScript and CSS Grid!"
+            image={battleship.file.childImageSharp.fixed}
+            title="Battleships"
           />
         </Cards>
       </Section>

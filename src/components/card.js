@@ -1,15 +1,19 @@
 import React from "react"
 import PropTypes from "prop-types"
-// import Img from "gatsby-image"
+import Img from "gatsby-image"
 
 const Card = ({ headingText, paragraphText, image, imageText }) => {
   return (
     <div className="max-w-xs bg-white text-initial rounded overflow-hidden shadow-lg mx-6">
-      {/* <Img fixed={image} /> */}
-      <img src={image} />
+      <Img fixed={image} />
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">
-          <a target="_blank" href="#top" title={imageText}>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.battleships.ajmurphy.co.uk"
+            title={imageText}
+          >
             {headingText}
           </a>
         </div>
