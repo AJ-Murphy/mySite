@@ -57,13 +57,12 @@ body {
   @apply bg-white;
 }
 
-#hero,
-#hero ~ section > .container {
-  min-width: calc(100% - 2.5rem);
-  position: relative;
-  left: 2.5rem;
-  @apply px-10;
-}
+// #hero,
+// #hero ~ section > .container {
+//   min-width: calc(100% - 2.5rem);
+//   position: relative;
+//   left: 2.5rem;
+// }
 
 section:nth-of-type(even) > .container {
   @apply bg-darkBlue text-white;

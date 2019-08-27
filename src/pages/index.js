@@ -18,10 +18,9 @@ const IndexPage = () => {
     query {
       file(relativePath: { eq: "battleships.png" }) {
         childImageSharp {
-          # Specify a fixed image and fragment.
           # The default width is 400 pixels
-          fixed(width: 400, height: 300) {
-            ...GatsbyImageSharpFixed
+          fluid(maxWidth: 400, maxHeight: 300) {
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -45,14 +44,14 @@ const IndexPage = () => {
       />
       <Section
         headingText="About"
-        paragraphText="Hi, I am a full-stack web developer with 2+ years in the industry! interest in staying up-to-date on the latest trends"
+        paragraphText="I’m Adam Murphy, a full stack web developer from Durham with 2 years working in the industry. I am passionate about learning anything web related and creating responsive websites. I’m looking for a full time position as a web developer in the Durham and Newcastle area."
       />
       <Section headingText="Portfolio">
         <Cards>
           <Card
             headingText="Battleships"
             paragraphText="A basic game of Battleships made with JavaScript and CSS Grid!"
-            image={battleship.file.childImageSharp.fixed}
+            image={battleship.file.childImageSharp.fluid}
             title="Battleships"
           />
         </Cards>

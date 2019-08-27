@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 const Card = ({ headingText, paragraphText, image, imageText }) => {
   return (
     <div className="max-w-xs bg-white text-initial rounded overflow-hidden shadow-lg mx-6">
-      <Img fixed={image} />
+      <Img fluid={image} />
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">
           <a

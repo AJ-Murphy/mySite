@@ -14,7 +14,7 @@ const Hero = ({
 }) => (
   <div
     id="hero"
-    className="container h-screen flex flex-col justify-center items-center text-white text-center m-0"
+    className="container max-w-full h-screen flex flex-col justify-center items-center text-white text-center px-24"
   >
     <h1 className="mt-auto mb-4 text-3xl sm:text-6xl">{headingText}</h1>
     <p className="m-4 text-lg sm:text-2xl">{subHeadingText}</p>
