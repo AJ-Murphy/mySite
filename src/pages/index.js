@@ -31,7 +31,7 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Home" />
       <Nav>
-        <NavLinks link="#hero" icon={<Icon.Home />} />
+        <NavLinks link="#top" icon={<Icon.Home />} />
         <NavLinks link="#about" icon={<Icon.User />} />
         <NavLinks link="#portfolio" icon={<Icon.Code />} />
         <NavLinks link="#contact" icon={<Icon.Mail />} />
@@ -41,12 +41,17 @@ const IndexPage = () => {
         subHeadingText="Full-stack web developer"
         buttonText="Contact"
         buttonLink="#contact"
+        id="#top"
+        chevronLink="#about"
+        linkedin="https://www.linkedin.com/in/aj-murphy/"
+        github="https://github.com/AJ-Murphy"
       />
       <Section
         headingText="About"
+        id="about"
         paragraphText="I’m Adam Murphy, a full stack web developer from Durham with 2 years working in the industry. I am passionate about learning anything web related and creating responsive websites. I’m looking for a full time position as a web developer in the Durham and Newcastle area."
       />
-      <Section headingText="Portfolio">
+      <Section headingText="Portfolio" id="portfolio">
         <Cards>
           <Card
             headingText="Battleships"
@@ -56,7 +61,7 @@ const IndexPage = () => {
           />
         </Cards>
       </Section>
-      <Section headingText="Contact">
+      <Section headingText="Contact" id="contact">
         <Contact />
       </Section>
     </Layout>
