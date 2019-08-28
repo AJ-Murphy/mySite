@@ -26,7 +26,6 @@ const Hero = ({
         <Icon.GitHub />
       </a>
     </div>
-
     <a href={chevronLink} className="mt-auto">
       <div className="text-white text-xs m-4 mt-auto">
         <Icon.ChevronDown />
@@ -38,8 +37,9 @@ const Hero = ({
 Hero.propTypes = {
   headingText: PropTypes.node.isRequired,
   subHeadingText: PropTypes.node.isRequired,
-  buttonText: PropTypes.node.isRequired,
-  buttonLink: PropTypes.node.isRequired,
+  linkedin: PropTypes.node.isRequired,
+  github: PropTypes.node.isRequired,
+  chevronLink: PropTypes.node.isRequired,
 }
 
 export default Hero
