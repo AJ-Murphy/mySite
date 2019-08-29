@@ -7,7 +7,7 @@ const Contact = () => {
       method="post"
       netlify-honeypot="bot-field"
       data-netlify="true"
-      className="w-full max-w-lg"
+      className="w-full max-w-lg self-center"
     >
       <input type="hidden" name="bot-field" />
       <div className="flex flex-wrap -mx-3 mb-6">

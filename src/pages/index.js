@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Fragment } from "react"
 import * as Icon from "react-feather"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -49,7 +49,34 @@ const IndexPage = () => {
       <Section
         headingText="About"
         id="about"
-        paragraphText="I’m Adam Murphy, a full stack web developer from Durham with 2 years working in the industry. I am passionate about learning anything web related and creating responsive websites. I’m looking for a full time position as a web developer in the Durham and Newcastle area."
+        paragraphText={
+          <Fragment>
+            <p className="my-3">
+              I’m Adam Murphy, a full stack web developer from Durham with two
+              years working in the industry.
+            </p>
+
+            <p className="my-3">
+              During my two years at IT Success I have worked on a multitude of
+              projects for a range of clients providing Web Design (photo
+              editing and flat designs) and Development (PHP, HTML, CSS,
+              JavaScript, WordPress and responsive layouts). I have a keen
+              understanding of a projects life cycles and meeting deadlines.
+            </p>
+
+            <p className="my-3">
+              I have a wide range of skills including problem solving,
+              particularly troubleshooting issues on a website and I am
+              passionate about learning and enjoy building sites from start to
+              finish.
+            </p>
+
+            <p className="my-3">
+              I am currently looking for a full time position as a web developer
+              in the North East of England.
+            </p>
+          </Fragment>
+        }
       />
       <Section headingText="Portfolio" id="portfolio">
         <Cards>
