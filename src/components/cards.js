@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 
 const Cards = ({ children }) => (
-  <div className="flex justify-content self-center">{children}</div>
+  <div className="flex flex-wrap justify-center self-center ">{children}</div>
 )
 
 Cards.propTypes = {

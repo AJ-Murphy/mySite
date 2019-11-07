@@ -4,7 +4,7 @@ import Img from "gatsby-image"
 
 const Card = ({ headingText, paragraphText, image, imageText, link }) => {
   return (
-    <div className="max-w-xs bg-white text-initial rounded overflow-hidden shadow-lg mx-6">
+    <div className="w-64 bg-white text-initial rounded overflow-hidden shadow-lg m-6">
       <Img fluid={image} />
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">
