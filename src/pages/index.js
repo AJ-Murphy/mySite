@@ -14,9 +14,17 @@ import Contact from "../components/contactForm"
 import SEO from "../components/seo"
 
 const IndexPage = () => {
-  const battleship = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "battleships.png" }) {
+      battleships: file(relativePath: { eq: "battleships.png" }) {
+        childImageSharp {
+          # The default width is 400 pixels
+          fluid(maxWidth: 400, maxHeight: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      simplebonds: file(relativePath: { eq: "simplebonds.png" }) {
         childImageSharp {
           # The default width is 400 pixels
           fluid(maxWidth: 400, maxHeight: 300) {
@@ -26,7 +34,6 @@ const IndexPage = () => {
       }
     }
   `)
-
   return (
     <Layout>
       <SEO title="Home" />
@@ -84,8 +91,15 @@ const IndexPage = () => {
             headingText="Battleships"
             link="https://www.battleships.ajmurphy.co.uk"
             paragraphText="A basic game of Battleships made with JavaScript and CSS Grid!"
-            image={battleship.file.childImageSharp.fluid}
+            image={data.battleships.childImageSharp.fluid}
             title="Battleships"
+          />
+          <Card
+            headingText="Simple Bonds"
+            link="https://www.simple-bonds.ajmurphy.co.uk"
+            paragraphText="A JavaScript based web application that allows a user to record investments into bonds by their investors"
+            image={data.simplebonds.childImageSharp.fluid}
+            title="Simple Bonds"
           />
         </Cards>
       </Section>
