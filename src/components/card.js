@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Img from "gatsby-image"
 
-const Card = ({ headingText, paragraphText, image, imageText }) => {
+const Card = ({ headingText, paragraphText, image, imageText, link }) => {
   return (
     <div className="max-w-xs bg-white text-initial rounded overflow-hidden shadow-lg mx-6">
       <Img fluid={image} />
@@ -11,7 +11,7 @@ const Card = ({ headingText, paragraphText, image, imageText }) => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.battleships.ajmurphy.co.uk"
+            href={link}
             title={imageText}
           >
             {headingText}
@@ -28,6 +28,7 @@ Card.propTypes = {
   paragraphText: PropTypes.node.isRequired,
   image: PropTypes.node.isRequired,
   imageText: PropTypes.node.isRequired,
+  link: PropTypes.node.isRequired,
 }
 
 export default Card

@@ -82,6 +82,7 @@ const IndexPage = () => {
         <Cards>
           <Card
             headingText="Battleships"
+            link="https://www.battleships.ajmurphy.co.uk"
             paragraphText="A basic game of Battleships made with JavaScript and CSS Grid!"
             image={battleship.file.childImageSharp.fluid}
             title="Battleships"
