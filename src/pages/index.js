@@ -97,7 +97,7 @@ const IndexPage = () => {
           <Card
             headingText="Simple Bonds"
             link="https://www.simple-bonds.ajmurphy.co.uk"
-            paragraphText="A JavaScript based web application that allows a user to record investments into bonds by their investors"
+            paragraphText="A JavaScript based web application that allows a user to record investments into bonds by their investors."
             image={data.simplebonds.childImageSharp.fluid}
             title="Simple Bonds"
           />
