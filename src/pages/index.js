@@ -32,6 +32,14 @@ const IndexPage = () => {
           }
         }
       }
+      weather: file(relativePath: { eq: "weather.png" }) {
+        childImageSharp {
+          # The default width is 400 pixels
+          fluid(maxWidth: 400, maxHeight: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
   return (
@@ -100,6 +108,13 @@ const IndexPage = () => {
             paragraphText="A JavaScript based web application that allows a user to record investments into bonds by their investors."
             image={data.simplebonds.childImageSharp.fluid}
             title="Simple Bonds"
+          />
+          <Card
+            headingText="Weather App"
+            link="https://www.weather.ajmurphy.co.uk"
+            paragraphText="A React app to get the weather."
+            image={data.weather.childImageSharp.fluid}
+            title="Weather app"
           />
         </Cards>
       </Section>
